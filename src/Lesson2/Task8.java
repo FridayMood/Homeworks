@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task8 {
     public static void main(String[] args) {
-        int i = 0;
+        int i;
         int sum = 0;
         System.out.println("Введите любое целое положительное (>0): ");
         Scanner mn = new Scanner(System.in);

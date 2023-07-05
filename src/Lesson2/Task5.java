@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
-        int i = 0;
+        int i;
         System.out.println("Введите номер цвета в радуге (от 1 до 7): ");
         Scanner mn = new Scanner(System.in);
         i = mn.nextInt();

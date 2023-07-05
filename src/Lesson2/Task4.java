@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task4 {
     public static void main(String[] args) {
-        int t = 0;
+        int t;
         System.out.println("Введите температуру: ");
         Scanner mn = new Scanner(System.in);
         t = mn.nextInt();
