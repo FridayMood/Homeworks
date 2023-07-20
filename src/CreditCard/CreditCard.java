@@ -4,12 +4,14 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class CreditCard {
-    long accountNumber;
+    String accountNumber;
     double currentAmount;
 
     public CreditCard() {
         Random random = new Random();
-        this.accountNumber = random.nextLong(100234567, 295678456);
+        String [] account = new String[]{"10023456", "10067895", "1008899"};
+        int n = (int)Math.floor(Math.random() * account.length);
+        this.accountNumber = account[n];
         this.currentAmount = random.nextDouble(0,10000);
     }
 
