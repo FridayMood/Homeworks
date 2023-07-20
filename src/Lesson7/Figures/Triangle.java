@@ -1,6 +1,6 @@
 package Lesson7.Figures;
 
-public class Triangle extends Figures {
+public class Triangle implements Figures {
     private double sideA;
     private double sideB;
     private double sideC;

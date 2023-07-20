@@ -1,7 +1,7 @@
 package Lesson7.Figures;
 
-public abstract class Figures {
-    public abstract double square();
+public interface Figures {
+    double square();
 
-    public abstract double perimeter();
+    double perimeter();
 }

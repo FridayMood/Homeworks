@@ -1,6 +1,6 @@
 package Lesson7.Figures;
 
-public class Circle extends Figures {
+public class Circle implements Figures {
     private double radius;
 
     public Circle() {

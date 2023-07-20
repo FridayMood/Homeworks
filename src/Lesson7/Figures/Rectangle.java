@@ -1,6 +1,6 @@
 package Lesson7.Figures;
 
-public class Rectangle extends Figures {
+public class Rectangle implements Figures {
     private double length;
     private double width;
 
