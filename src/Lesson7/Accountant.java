@@ -1,22 +1,12 @@
 package Lesson7;
 
-public class Accountant implements Info {
-    private String position;
-
+public class Accountant extends Worker implements Info {
     public Accountant() {
-        this.position = "Accountant";
-    }
-
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
+        super.setPosition("Accountant");
     }
 
     @Override
     public void printPosition() {
-        System.out.println("Должность: " + position);
+        System.out.println("Должность: " + super.getPosition());
     }
 }
