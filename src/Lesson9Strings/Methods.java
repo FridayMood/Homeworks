@@ -38,14 +38,14 @@ public interface Methods {
     public static String onlyLettersUppercase(String a) {
         StringBuilder builder = new StringBuilder();
         builder.append("Letters:");
-                builder.append(a.substring(5, 8));
+                builder.append(a.substring(5, 8).toUpperCase());
                 builder.append("/");
-                builder.append(a.substring(14, 17));
+                builder.append(a.substring(14, 17).toUpperCase());
                 builder.append("/");
-                builder.append(a.charAt(19));
+                builder.append(a.substring(19,20).toUpperCase());
                 builder.append("/");
-                builder.append(a.charAt(21));
-        System.out.println("Only letter to Uppercase with StringBuilder: " + builder.toString().toUpperCase());
+                builder.append(a.substring(21,22).toUpperCase());
+        System.out.println("Only letter to Uppercase with StringBuilder: " + builder.toString());
         return builder.toString();
     }
 }
