@@ -35,4 +35,17 @@ public interface Methods {
         System.out.println("Does the document contain abc or ABC?: " + b.contains("abc"));
         return b;
     }
+    public static String onlyLettersUppercase(String a) {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Letters:");
+                builder.append(a.substring(5, 8));
+                builder.append("/");
+                builder.append(a.substring(14, 17));
+                builder.append("/");
+                builder.append(a.charAt(19));
+                builder.append("/");
+                builder.append(a.charAt(21));
+        System.out.println("Only letter to Uppercase with StringBuilder: " + builder.toString().toUpperCase());
+        return builder.toString();
+    }
 }
