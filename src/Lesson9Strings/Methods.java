@@ -7,10 +7,9 @@ public interface Methods {
     }
 
     public static String replace3Letters(String a) {
-        String replace3Letters = a.replace("Tyu", "***");
-        String replace3Letters2 = replace3Letters.replace("tyk", "***");
-        System.out.println("* instead of blocks of numbers: " + replace3Letters2);
-        return replace3Letters2;
+        String replace3Letters = a.substring(0, 5) + "***" + a.substring(8,14) + "***" +a.substring(17);
+        System.out.println("* instead of blocks of letters: " + replace3Letters);
+        return replace3Letters;
     }
 
     public static String onlyLetters(String a) {
